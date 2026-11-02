@@ -16,7 +16,7 @@ Or use the VS Code Live Server extension.
 1. Open the site without a `#challenge=` link and choose **Admin settings** in the footer.
 2. Fill in the theme (Hearts, Friendly Web Hero, Green Girl Hero, Taco Fiesta, Purple Cosmic, Berry Pop, VALORANT Agents, or VALORANT Immortal II), first-page content, reset activity, DSA question, MCQs and next-topic choices. Add or remove MCQs as needed.
 3. Choose **Create today's share link**, copy the generated link, and send it to your friend.
-4. The challenge content is encoded in that link. Opening it loads the challenge without a backend or a daily deployment. Save a new link for each day's challenge.
+4. The challenge content is gzip-compressed into that link. Opening it decompresses and loads the challenge without a backend or daily deployment. Save a new link for each day's challenge. This makes links shorter, though their length still depends on how much content they contain.
 5. When your friend submits feedback, their email app opens a message addressed to `gargaarzoo24@gmail.com` with their check-in, coding answer, MCQ answers, score, feedback and requested topic. She needs to press **Send**.
 
 The builder remembers the last challenge in that browser. Each generated link contains its own complete content, so previously sent links keep their original challenge. The admin panel is hidden on the shared practice link.
