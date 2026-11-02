@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x2="0.9" y2="1">
+      <stop stop-color="#18030a"/>
+      <stop offset=".38" stop-color="#650813"/>
+      <stop offset=".72" stop-color="#35050d"/>
+      <stop offset="1" stop-color="#10050b"/>
+    </linearGradient>
+    <radialGradient id="cityGlow" cx=".53" cy=".78" r=".65">
+      <stop stop-color="#fa382f" stop-opacity=".52"/>
+      <stop offset=".45" stop-color="#a31424" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#16060d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="panelGlow" cx=".84" cy=".16" r=".56">
+      <stop stop-color="#ff593b" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#ed2030" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="halftone" width="19" height="19" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#ffaaa0" opacity=".2"/>
+    </pattern>
+    <pattern id="windows" width="38" height="44" patternUnits="userSpaceOnUse">
+      <path d="M8 8h8v13H8zm17 0h7v13h-7zM8 29h8v10H8zm17 0h7v10h-7z" fill="#ffb26e" opacity=".42"/>
+    </pattern>
+    <linearGradient id="cityFade" x2="0" y2="1">
+      <stop stop-color="#1c1018" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#07070c" stop-opacity=".95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#base)"/>
+  <rect width="1600" height="1000" fill="url(#cityGlow)"/>
+  <rect width="1600" height="1000" fill="url(#panelGlow)"/>
+  <path d="M0 0h440L0 370zm1600 0h-230l230 310zM0 1000h420L0 750zm1600 0h-360l360-350z" fill="#bd182b" opacity=".16"/>
+  <path d="M0 0 510 0M0 0 320 340M0 0 60 540M0 0 0 680M0 0 720 190M0 0 880 370" fill="none" stroke="#ff8b83" stroke-width="2" opacity=".27"/>
+  <path d="M0 45Q250 15 390 200T740 390M0 90Q260 55 410 245T770 430M0 150Q270 110 440 290T820 470M42 0Q55 260 245 370T510 690M96 0Q100 275 310 400T580 730M178 0Q170 290 390 450T650 790" fill="none" stroke="#ffb1a4" stroke-width="2" opacity=".24"/>
+  <path d="M1600 1000 1100 1000m500 0-260-350m260 350-40-570m40 570-680-210m680 210-820 90" fill="none" stroke="#ff786f" stroke-width="2" opacity=".2"/>
+  <path d="M1600 955q-275 13-420-190t-360-250m780 390q-300 8-465-210T770 440m830 455q-310 15-500-220T710 410m890 460q-330 20-555-245T660 370m940 520q-365 20-610-275T605 340M1530 1000q-20-300-250-445T900 240m-12 760q-30-330-275-500T680 160m-105 840Q530 690 280 500T0 390" fill="none" stroke="#ffb6aa" stroke-width="2" opacity=".18"/>
+  <rect width="1600" height="1000" fill="url(#halftone)" opacity=".55"/>
+
+  <g opacity=".9">
+    <path d="M0 830h100V690h55V580h82v250h54V645h85v-90h68v275h65V710h74V590h75v240h78V650h55V520h82v310h77V680h75v-95h74v245h66V650h93v180h70V540h88v290h93v-90h66v260H0z" fill="#120b14"/>
+    <path d="M0 830h100V690h55V580h82v250h54V645h85v-90h68v275h65V710h74V590h75v240h78V650h55V520h82v310h77V680h75v-95h74v245h66V650h93v180h70V540h88v290h93v-90h66v260H0z" fill="url(#windows)" opacity=".7"/>
+    <path d="M0 870h1600v130H0z" fill="url(#cityFade)"/>
+  </g>
+  <path d="M0 0h1600v1000H0z" fill="none" stroke="#f85a49" stroke-width="18" opacity=".11"/>
+</svg>
